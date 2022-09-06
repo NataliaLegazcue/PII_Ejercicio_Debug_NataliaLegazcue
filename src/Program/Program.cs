@@ -19,7 +19,7 @@ namespace WordsPhrases
         {
             const string text1 = " text1 ";
             const string text2 = " text2 ";
-            const string expected = "text1   text2";
+            const string expected = "text1 text2";
             Phrase phrase = new Phrase();
             Word word1 = new Word(text1);
             Word word2 = new Word(text2);
@@ -30,11 +30,11 @@ namespace WordsPhrases
 
             if (actual == expected)
             {
-                Console.WriteLine($"Okay, '{actual.Trim()}' es igual a '{expected}'");
+                Console.WriteLine($"Okay, '{actual}' es igual a '{expected}'");
             }
             else
             {
-                Console.WriteLine($"Algo salió mal, '{actual.Trim()}' es difernte de '{expected}'");
+                Console.WriteLine($"Algo salió mal, '{actual}' es difernte de '{expected}'");
             }
         }
     }
